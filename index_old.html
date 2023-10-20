@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DropOut Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient menavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Student DropOut Analysis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Templates\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Templates\index_old.html">Check</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Templates\trends.html">Trends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <centre>
+        <h1 class="checkh1">DropOut Predictor</h1>
+    </centre>
+    <!-- <h1>User Input Form</h1> -->
+    <form action="/" method="POST">
+        <label for="school">School:</label>
+        <input type="text" id="school" name="school" required><br><br>
+
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area" required><br><br>
+
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+        
+        <label for="caste">Caste:</label>
+        <input type="text" id="caste" name="caste" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        
+        <input type="submit" value="Submit">
+    </form>
+    <p>The Probability of Student dropping out is : {{variable}}</p>
+</body>
+</html>
